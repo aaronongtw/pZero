@@ -1,0 +1,131 @@
+body {
+  background-color: black;
+  font-family: "Indie Flower";
+}
+
+.container {
+  text-align: center;
+  color:white;
+  max-height: 90%;
+}
+
+#startGame {
+  position:relative;
+  left:10%;
+  top: 30%;
+  max-width:80%;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 4px grey;
+}
+
+#rules {
+  color:white;
+}
+#rules h1 {
+  font-size: 300%;
+}
+#rules h3 {
+  font-size: 80%;
+}
+
+#startGame label {
+  color:white;
+  font-family: "Indie Flower";
+}
+
+#gameStats {
+  color:white;  
+}
+
+#Sanity {
+  background-color: green;
+  width:100%;
+}
+
+.event {
+  position:fixed;
+  margin:0px auto;
+  top:15px;
+  width:600px;
+  background-color: #73191C;
+  height:30px;
+  left:25%;
+  padding-top:0px;
+  opacity:0.8;
+  z-index: -10;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 4px #2F010A;
+}
+
+.event h3 {
+  margin-top: 3px;
+  color:white;
+}
+
+.startGameParam {
+  text-align: center;
+  display:block;
+  margin:0px auto;
+}
+
+.dng {
+  position:absolute;
+  left: 17.5%;
+  top: 15%;
+  z-index: -100;
+}
+
+.floor {
+  margin:0px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.room {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  background-image: url("../img/dungeonbg.gif");
+  box-shadow: 0px 0px 5px 4px #2F010A;
+  position:relative;
+}
+
+.gameDash {
+  position:fixed;
+  left: 145px;
+  width: 60px;
+  top:35px;
+  display: inline-block;
+  z-index: -50;
+}
+
+img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  margin: 0px ;
+  height: 100%;
+  width: 100%;
+}
+
+.gameDash h5{
+  display: inline-block;
+  color: white;
+  z-index: -99;
+}
+#help {
+  position: relative;
+  opacity:0.5;
+  width:30px;
+  height:30px;
+  background-color: black;
+  color:white;
+  font-size: 70%
+}
+#help p {
+  margin-top: 2px;
+}

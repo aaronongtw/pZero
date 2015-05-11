@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Test Dungeon</title>
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/atm.css">
+  <script src="js/jquery-1.7.2.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <div id="startGame">
+    <div id="gameStats">
+    <h2 class="stats" id="death"></h2>
+    <h2 class="stats" id="escapes"></h2>
+    <h2 class="stats" id="moves"></h2>
+    <h3 class="stats" id="points"></h3>
+  </div>
+  <div id="rules">
+    <h1>WDI-9 Dungeon</h1>
+    <h3>You have to collect enough keys equivalent to the level of difficulty to escape the dungeon. Use WSAD to move. The ghoul will kill you if he stays in your room for more than one turn or if you enter his room. You will only take damage if he attempts to attack you. There are 5 levels of difficulty to start with. On level three you will encounter a hellhound, a hellhound will not kill you immediately but will gradually damage you. You will die once your health reaches 0. You may choose to begin anywhere on the map. Enemies and obstacles will only spawn on level 2 and 3. Once you have completed level 5, you will have access to higher levels of difficulty gradually. If you succeed in completing level 11 send me a screenshot and I'll buy you a beer.</h3>
+  </div>
+    <label class="startGameParam" for="difficulty">Difficulty</label>
+    <input class="startGameParam" type="range" id="difficulty" min="1" max="5" value="1" list="difficultySettings">
+    <datalist id="difficultySettings">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </datalist>
+    <label class="startGameParam" for="startLoc">Starting Location</label>
+    <input class="startGameParam" type="number" id="startLoc" placeholder="1-30" value="1">
+    <input class="startGameParam" type="button" id="start" value="Start Game">
+    </div> <!-- startgame -->
+    <div class="event">
+      <h3 id="eventInfo"></h3>
+    </div>
+    <div class="dng">
+      <div id="f3" class="floor">
+        <div class="room" id="r21"></div>
+        <div class="room" id="r22"></div>
+        <div class="room" id="r23"><img src="img/torch.gif" alt=""></div>
+        <div class="room" id="r24"></div>
+        <div class="room" id="r25"></div>
+        <div class="room" id="r26"></div>
+        <div class="room" id="r27"></div>
+        <div class="room" id="r28"><img src="img/torch.gif" alt=""></div>
+        <div class="room" id="r29"></div>
+        <div class="room" id="r30"></div>
+      </div>
+      <div id="f2" class="floor">
+        <div class="room" id="r11"></div>
+        <div class="room" id="r12"></div>
+        <div class="room" id="r13"><img src="img/torch.gif" alt=""></div>
+        <div class="room" id="r14"></div>
+        <div class="room" id="r15"></div>
+        <div class="room" id="r16"></div>
+        <div class="room" id="r17"></div>
+        <div class="room" id="r18"><img src="img/torch.gif" alt=""></div>
+        <div class="room" id="r19"></div>
+        <div class="room" id="r20"><img src="img/cStairs.gif"></div>
+      </div>
+      <div id="f1" class="floor">
+        <div class="room" id="r1"><img id="door" src="img/door.gif" alt=""></div>
+        <div class="room" id="r2"></div>
+        <div class="room" id="r3"><img src="img/torch.gif" alt=""></div>
+        <div class="room" id="r4"></div>
+        <div class="room" id="r5"></div>
+        <div class="room" id="r6"></div>
+        <div class="room" id="r7"></div>
+        <div class="room" id="r8"><img src="img/torch.gif" alt=""></div>
+        <div class="room" id="r9"></div>
+        <div class="room" id="r10"><img src="img/cStairs.gif"></div>
+      </div>
+    </div>
+    <div class="gameDash">
+      <h5 id="key">Key Held: 0</h5>
+      <h5 id="diff">Current Difficulty: 0</h5>
+      <h5 id="Sanity">Health: 0</h5>
+      <h5 id="keyLoc">Current Key Location: ?</h5>
+      <div id="help"><h3>Hover for Help</h3></div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
