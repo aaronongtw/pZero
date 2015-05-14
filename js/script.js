@@ -92,7 +92,7 @@ var winCondition = function() {
 
 var realisticComputer = function() {
   aiRandomize = dice(1, 10)
-  if (aiRandomize < parseInt($('#dif').val())) {
+  if (aiRandomize <= parseInt($('#dif').val())) {
     compMove();
   } else {
     computerMove();
